@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(17, 17, 17);
+}
+/* General Settings */
+
+.container {
+  
+}
+
+/* Navigation System */
+.bar {
+    position: absolute;
+    bottom: 30px;
+    background-color: rgb(24, 22, 22);
+    width: 600px;
+    outline: none;
+    border-color: #9ecaed;
+    border: 2px solid #7e7e7e;
+    box-shadow: 0 0 10px #9ecaed;
+    height: 70px;
+    left: 35cap;
+    border-radius: 25px;
+}
+
