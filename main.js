@@ -1,11 +1,9 @@
-// global variable for the player
+
 var player;
-// this function gets called when API is ready to use
+
 function onYouTubePlayerAPIReady() {
-    // create the global player from the specific iframe (#video)
-    player = new YT.Player('video', {
+    player = new YT.Player('videoshowergr', {
         events: {
-            // call this function when player is ready to use
             'onReady': onPlayerReady
         }
     });
@@ -15,17 +13,19 @@ function onPlayerReady(event) {
     playButton.addEventListener("click", function() {
         player.playVideo();
     });
-    var pauseButton = document.getElementById("pause-button");
+    var pauseButton = document.getElementById("pausebutton");
     pauseButton.addEventListener("click", function() {
         player.pauseVideo();
     });
-    var stopButton = document.getElementById("stop-button");
-    stopButton.addEventListener("click", function() {
-        player.stopVideo();
-    });
+    function spacestopvideo(event) {
+        if (event.key === "Space") {
+            event.preventDefault();
+            player.stopVideo();
+        }
+    }
 }
 
-// Inject YouTube API script
+// Injector For Youtb
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/player_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];

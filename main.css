@@ -1,11 +1,6 @@
 body {
     background-color: rgb(17, 17, 17);
 }
-/* General Settings */
-
-.container {
-
-}
 
 /* Navigation System */
 .bar {
@@ -18,20 +13,24 @@ body {
     border: 2px solid #7e7e7e;
     box-shadow: 0 0 5px #9ecaed;
     height: 75px;
-    left: 35cap;
+    left: 38cap;
+    opacity: 0.8;
+    user-select: none;
     border-radius: 35px;
 }
 
 .playbutton {
     background-color: transparent;
     border: none;
+    user-select: none;
 }
 
 .playimg {
     position: absolute;
     bottom: 35px;
-    left: 400px;
+    left: 420px;
     width: auto;
+    user-select: none;
     height: 45px;
 
 
@@ -53,16 +52,57 @@ body {
 }
 
 
-/* Video Clearenace */
+/* Video Shower */
 
 .yconnector {
     position: absolute;
     width: 600px;
-    left: 400px;
+    left: 405px;
     height: 300px;
     border-radius: 10px;
+    user-select: none;
     border: 1px solid #0a0a0a;
     box-shadow: 0 0 50px #04243f;
 }
 
+/* Minimize Video */
+
+.minimizebutton {
+    position: absolute;
+    right: 6px;
+    background-color: rgb(22, 22, 22);
+    color: rgb(100, 100, 45);
+    height: 30px;
+    user-select: none;
+    width: auto;
+    font-family: "Exo 2", sans-serif;
+    outline: none;
+    border: none;
+    bottom: 6px;
+    border-radius: 5px;
+    font-style: normal;
+}
+
+
+
+
+/* Settings Menu */
+
+.settingsmenu {
+    position: absolute;
+    background-color: rgb(51, 51, 51);
+    width: 500px;
+    height: 500px;
+    left: 450px;
+    border-radius: 5px;
+    top: 20px;
+}
+
+.titlesettings {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 30px;
+    font-family: "DM Sans", sans-serif;
+    box-shadow: 0 0 2px #7e7e7e;
+}
 
