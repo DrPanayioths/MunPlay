@@ -4,21 +4,65 @@ body {
 /* General Settings */
 
 .container {
-  
+
 }
 
 /* Navigation System */
 .bar {
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
     background-color: rgb(24, 22, 22);
     width: 600px;
     outline: none;
     border-color: #9ecaed;
     border: 2px solid #7e7e7e;
-    box-shadow: 0 0 10px #9ecaed;
-    height: 70px;
+    box-shadow: 0 0 5px #9ecaed;
+    height: 75px;
     left: 35cap;
-    border-radius: 25px;
+    border-radius: 35px;
 }
+
+.playbutton {
+    background-color: transparent;
+    border: none;
+}
+
+.playimg {
+    position: absolute;
+    bottom: 35px;
+    left: 400px;
+    width: auto;
+    height: 45px;
+
+
+}
+@keyframes clickonply {
+    0%{
+        filter: drop-shadow(-3px 3px 5px rgba(251, 255, 0, 0.6));
+    }
+    100%{
+        filter: drop-shadow(-3px 4px 5px rgba(255, 0, 132, 0.8));
+    }
+}   
+
+
+.playimg:hover {
+    animation-name: clickonply;
+    animation-duration: 5s;
+     
+}
+
+
+/* Video Clearenace */
+
+.yconnector {
+    position: absolute;
+    width: 600px;
+    left: 400px;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid #0a0a0a;
+    box-shadow: 0 0 50px #04243f;
+}
+
 

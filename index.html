@@ -2,9 +2,9 @@
 
 <!-- Link Files Of The Site -->
 <link rel="stylesheet" href="main.css">
-<script href="main.js"></script>
-<script href="player.js"></script>   
-<link rel="icon" type="image/x-icon" href="favmunplay.ico"/>
+<script src="main.js"></script>
+<script src="player.js"></script>   
+<link rel="icon" type="image/x-icon" href="/imgs/favmunplay.ico"/>
 
 
 </head>
@@ -12,17 +12,16 @@
 <div class="container">
     <div class="bar"></div>
 
+    <!-- Video And Music-->
+    <iframe class="yconnector" id="video" src="https://www.youtube-nocookie.com/embed/nyF-OVqzwgA?enablejsapi=1&html5=1&controls=0&modestbranding=1&showinfo=0" frameborder="0" title="MunPlayer" allow="autoplay; encrypted-media"></iframe>
 
 
-
-
-
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nyF-OVqzwgA?si=MlJWiPTZ0Ek-Agkg&amp;controls=0" title="MunPlayer" frameborder="0" allow="encrypted-media;"></iframe>
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fzLbGSgBUXM?si=f760vjBLgqJrZETA&amp;controls=0" title="MunPlayer" frameborder="0" allow="encrypted-media;"></iframe>
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BadvpyXYb0U?si=6mEE1puy_N4w6hM6&amp;controls=0" title="MunPlayer" frameborder="0" allow="encrypted-media"></iframe>
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/a0vX_MXJKA0?si=jbxBafDRvLbi9ePG&amp;controls=0" title="MunPlayer" frameborder="0" allow="encrypted-media"></iframe>
-
-
+    <!--Buttons For Control-->
+    <div class="buttons">
+        <button class="playbutton" id="play-button"><img class="playimg" src="/imgs/play.png"></button>
+        <button id="pause-button">PAUSE</button>
+        <button id="stop-button">STOP</button>
+    </div>
 
 
 </body>
