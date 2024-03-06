@@ -1,32 +1,15 @@
 
-var player;
-
-function onYouTubePlayerAPIReady() {
-    player = new YT.Player('videoshowergr', {
-        events: {
-            'onReady': onPlayerReady
-        }
-    });
-}
-function onPlayerReady(event) {
-    var playButton = document.getElementById("play-button");
-    playButton.addEventListener("click", function() {
-        player.playVideo();
-    });
-    var pauseButton = document.getElementById("pausebutton");
-    pauseButton.addEventListener("click", function() {
-        player.pauseVideo();
-    });
-    function spacestopvideo(event) {
-        if (event.key === "Space") {
-            event.preventDefault();
-            player.stopVideo();
-        }
-    }
+// Settings Open Function
+function opensettings(){
+    var settings = document.getElementById("settings-general")
+    settings.style.opacity = "1";
+    settings.style.animation = "smoothin 3s";
 }
 
-// Injector For Youtb
-var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/player_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// Settings Close Function
+
+function closesettings(){
+    var settings = document.getElementById("settings-general")
+    settings.style.animation = "closeset 3s";
+}
