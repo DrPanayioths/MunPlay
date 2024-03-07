@@ -12,4 +12,6 @@ function opensettings(){
 function closesettings(){
     var settings = document.getElementById("settings-general")
     settings.style.animation = "closeset 3s";
+    settings.style.opacity = "0";
 }
+

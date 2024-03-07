@@ -51,6 +51,21 @@ body {
      
 }
 
+.url-input {
+    position: absolute;
+    bottom: 25px;
+    left: 70px;
+    width: 400px;
+    user-select: none;
+    height: 30px;
+    outline: transparent;
+    color:white;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(32, 32, 32, 0.274);
+}
+
 
 /* Video Shower */
 
