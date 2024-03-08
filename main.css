@@ -19,6 +19,7 @@ body {
     border-radius: 35px;
 }
 
+/* Play Button  */
 .playbutton {
     background-color: transparent;
     border: none;
@@ -29,8 +30,8 @@ body {
 
 .playimg {
     position: absolute;
-    bottom: 35px;
-    left: 420px;
+    bottom: 15px;
+    left: 20px;
     width: auto;
     user-select: none;
     height: 45px;
@@ -48,10 +49,11 @@ body {
 
 
 .playimg:hover {
-    animation-name: clickonply;
-    animation-duration: 5s;
-     
+    animation: clickonply 5s;    
 }
+
+
+/* Custom URL Song */
 
 .url-input {
     position: absolute;
@@ -68,6 +70,9 @@ body {
     background-color: rgba(32, 32, 32, 0.274);
 }
 
+
+ /* Pause Button */
+
  .pausebutton {
     position: absolute;
     right: 50px;
@@ -77,6 +82,7 @@ body {
     background-color: transparent;
  }
 
+
  .pause-img {
     position: absolute;
     width: auto;
@@ -84,6 +90,18 @@ body {
     height: 45px;
  }
 
+ .pause-img:hover {
+    animation: pause_anim 5s;
+ }
+
+ @keyframes pause_anim {
+    0%{
+        filter: drop-shadow(-3px 3px 5px rgba(251, 255, 0, 0.6));
+    }
+    100%{
+        filter: drop-shadow(-3px 4px 5px rgba(255, 0, 132, 0.8));
+    }
+}   
 
 /* Video Shower */
 
@@ -141,11 +159,6 @@ body {
     }
   }
   
-
-
-
-
-
 
 .titlesettings {
     color: whitesmoke;

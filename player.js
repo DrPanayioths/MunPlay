@@ -13,10 +13,6 @@ function onPlayerReady(event) {
     playButton.addEventListener("click", function() {
         player.playVideo();
     });
-    var pauseButton = document.getElementById("pausebutton");
-    pauseButton.addEventListener("click", function() {
-        player.pauseVideo();
-    });
     // var pauseButton = document.getElementById("pausebutton");
     // pauseButton.addEventListener("Space", function() {
     //     player.pauseVideo();
