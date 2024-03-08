@@ -27,6 +27,13 @@ function onPlayerReady(event) {
     
 }
 
+
+// Pause Video Button Method
+function pauseVideo() {
+    player.pauseVideo();
+}
+
+
 // Injector For Youtb
 var api = document.createElement('script');
 api.src = "https://www.youtube.com/player_api";

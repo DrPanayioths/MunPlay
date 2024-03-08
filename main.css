@@ -22,6 +22,8 @@ body {
 .playbutton {
     background-color: transparent;
     border: none;
+    width: 0;
+    height: 0;
     user-select: none;
 }
 
@@ -53,11 +55,11 @@ body {
 
 .url-input {
     position: absolute;
-    bottom: 25px;
-    left: 70px;
-    width: 400px;
+    bottom: 20px;
+    left: 60px;
+    width: 480px;
     user-select: none;
-    height: 30px;
+    height: 35px;
     outline: transparent;
     color:white;
     text-align: center;
@@ -65,6 +67,22 @@ body {
     border: none;
     background-color: rgba(32, 32, 32, 0.274);
 }
+
+ .pausebutton {
+    position: absolute;
+    right: 50px;
+    top: 15px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+ }
+
+ .pause-img {
+    position: absolute;
+    width: auto;
+    user-select: none;
+    height: 45px;
+ }
 
 
 /* Video Shower */
