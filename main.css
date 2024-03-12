@@ -203,3 +203,30 @@ body {
     font-family: "DM Sans", sans-serif;
 }
 
+.minimize_on {
+    position: absolute;
+    left: 150px;
+    top: 75px;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    border: rgb(65, 65, 65) solid 2px;
+    color: white;
+    background-color: #007a33b4;
+    cursor: pointer;
+}
+
+.minimize_off {
+    position: absolute;
+    left: 150px;
+    top: 75px;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    border: rgb(65, 65, 65) solid 2px;
+    color: white;
+    background-color: #7e1300b4;
+    cursor: pointer;
+}
