@@ -36,19 +36,24 @@ function check_minimize() {
   localStorage.setItem("minimize","True");
   var minimize = localStorage.getItem("minimize");
   if (minimize == "True") {
-    document.getElementsByClassName("yconnector").style.width = "5px";
-    document.getElementsByClassName("yconnector").style.height = "5px";
+    var ytcon = document. getElementsByClassName("yconnector");
+    ytcon.width = "5px";
+    ytcon.height = "5px";
+
   } else if (minimize == "False") {
-    document.getElementById("videoshowergr").style.width = "600px";
-    document.getElementById("videoshowergr").style.height = "300px";
+    var videoShow = document.getElementById("videoshowergr");
+    videoShow.width = "600px";
+    videoShow.height = "300px"; 
   }
 }
 window.onload = check_minimize;
 
 function minimize_on() {
   localStorage.setItem("minimize", "True");
-  document.getElementById("minimize_on").style.visibility = "hidden";
-  document.getElementById("minimize_off").style.visibility = "visible";
+  var minimizeon = document.getElementById("minimize_on");
+  var minimizeoff  = document.getElementById("minimize_off");
+  minimizeon.visibility = "hidden";
+  minimizeoff.visibility = "visible";
 }
 
 function minimize_off() {
